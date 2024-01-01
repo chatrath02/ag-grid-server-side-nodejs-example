@@ -6,7 +6,10 @@ export default  {
     path: '/',
     filename: 'bundle.js'
   },
-  module: {
+  optimization: {
+    minimize: false,
+  },
+  module: {    
     rules: [
       {
         use: 'babel-loader',
